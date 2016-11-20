@@ -23,6 +23,21 @@
 
     <link rel="icon" type="image/png" href="img/DnTF.png" />
 
+        <!-- Core CSS file -->
+    <link rel="stylesheet" href="dist/photoswipe.css"> 
+    <link rel="stylesheet" href="css/gallery.css">
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+         In the folder of skin CSS file there are also:
+         - .png and .svg icons sprite, 
+         - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="dist/default-skin/default-skin.css"> 
+
+    <!-- Core JS file -->
+    <script src="dist/photoswipe.min.js"></script> 
+
+    <!-- UI JS file -->
+    <script src="dist/photoswipe-ui-default.min.js"></script> 
+
     <script>
 
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -63,6 +78,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link m-r-2" id = "toProjects" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link m-r-2" id = "toGallery" href="#gallery">Gallery</a>
                 </li>
                 <!--  <li class="nav-item">
                     <a class="nav-link m-r-2" target="_blank" href="http://blog.tangdian.ca">Résumé</a>
@@ -472,6 +490,114 @@
 </section>
 </div>
 
+
+<!-- gallery section begins -->
+<br>
+<br>
+<br>
+
+<section id = "gallery" class = "container-fluid">
+<h1 class = "center">Gallery</h1>
+        
+<div id="demo-test-gallery" class="demo-gallery">
+        <div class="row">
+
+            <a class = "flex-center col-sm-6 col-xs-12" href="https://c2.staticflickr.com/6/5329/30968231262_af9b42e70d_h.jpg" data-size="1600x1068" data-med="https://c2.staticflickr.com/6/5329/30968231262_54133e5371_b.jpg" data-med-size="1024x683" data-author="Dian Tang">
+              <img src="https://c2.staticflickr.com/6/5329/30968231262_54133e5371.jpg" alt="" />
+              <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+            </a>
+
+
+            <a class = "flex-center col-sm-6 col-xs-12" href="https://c2.staticflickr.com/6/5706/30193627234_6ec86f61fe_k.jpg" data-size="1600x1067" data-med="https://c2.staticflickr.com/6/5706/30193627234_cfe8e0d07c_b.jpg" data-med-size="1024x683" data-author="Dian Tang">
+              <img src="https://c2.staticflickr.com/6/5706/30193627234_cfe8e0d07c.jpg" alt="" />
+              <figure>This is dummy caption. It is not meant to be read.</figure>
+            </a>
+
+
+
+            <a class = "flex-center col-sm-6 col-xs-12" href="https://c2.staticflickr.com/6/5578/30988986121_b4b6df675d_h.jpg" data-size="1186 x 1600" data-med="https://c2.staticflickr.com/6/5578/30988986121_174295e417_b.jpg" data-med-size="759 x 1024" data-author="Dian Tang">
+              <img src="https://c2.staticflickr.com/6/5578/30988986121_174295e417.jpg" alt="" />
+              <figure>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</figure>
+            </a>
+
+            <a class = "flex-center col-sm-6 col-xs-12" href="https://c2.staticflickr.com/6/5589/30870891531_a7319bba8c_h.jpg" data-size="1600x1067" data-med="https://c2.staticflickr.com/6/5589/30870891531_36d7d674a7_b.jpg" data-med-size="1024x683" data-author="Dian Tang">
+              <img src="https://c2.staticflickr.com/6/5589/30870891531_36d7d674a7.jpg" alt="" />
+              <figure>It's a dummy caption. He who searches for meaning here will be sorely disappointed.</figure>
+            </a>
+
+
+
+          </div>
+          <!-- <figure class="demo-gallery__title">Demo gallery &middot; 5 photos</figure> -->
+
+        </div>
+
+      </section>
+
+    
+
+    <div id="gallery" class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+
+        <div class="pswp__scroll-wrap">
+
+          <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+          </div>
+
+          <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="pswp__loading-indicator"><div class="pswp__loading-indicator__line"></div></div> -->
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip">
+                    <!-- <a href="#" class="pswp__share--facebook"></a>
+                    <a href="#" class="pswp__share--twitter"></a>
+                    <a href="#" class="pswp__share--pinterest"></a>
+                    <a href="#" download class="pswp__share--download"></a> -->
+                </div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+            <div class="pswp__caption">
+              <div class="pswp__caption__center">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+  </div>
+
+
+
+
 <p id ="copyright"> © 2016 Dian Tang </p>
 
 
@@ -487,6 +613,7 @@
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
+
 <script>
         $("#toProjects").click(function () {
             var href = $(this).attr("href");
@@ -495,6 +622,14 @@
             return false;
         });
 
+        $("#toGallery").click(function () {
+            var href = $(this).attr("href");
+            var pos = $(href).offset().top;
+            $("html,body").animate({scrollTop: pos}, 1000);
+            return false;
+        });
+
+
         $("#toHead").click(function () {
             var href = $(this).attr("href");
             var pos = $(href).offset().top;
@@ -502,6 +637,8 @@
             return false;
         });
 </script>
+
+    <script src ="js/ps.js"/></script>
 
 </body>
 

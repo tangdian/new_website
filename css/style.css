@@ -80,3 +80,52 @@ a:hover {
     font-size: 15px;
 }
 
+
+
+
+/*@media(min-width:992px){
+    .demo-gallery img{
+    max-width: 330px;
+    max-height: 200px;
+    }
+}
+@media(min-width:1200px){}*/
+
+/*@media only screen and (min-width : 768px) {
+    .demo-gallery img{
+        width: 213px;
+        height: 143px;
+    }
+
+}*/
+
+
+.demo-gallery img{
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 320px;
+  height: 213px;
+  margin-top:20px;
+}
+
+@media(min-width:768px){
+     .demo-gallery img{
+        object-fit: none; /* Do not scale the image */
+      object-position: center; /* Center the image within the element */
+      width: 375px;
+      height: 250px;
+    }
+}
+
+@media(min-width:992px){
+
+.demo-gallery img{
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  width: 500px;
+  height: 333px;
+}
+}
+
+
+
